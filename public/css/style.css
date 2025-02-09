@@ -1,0 +1,465 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #7d78bb; /* Warna ungu */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .navbar-brand .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .navbar-menu .navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav .navbar-menu .navbar-links li {
+    display: inline;
+}
+
+nav .navbar-menu .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .navbar-menu .navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav .navbar-menu .navbar-links .btn-logout {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .navbar-menu .navbar-links .btn-logout:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .navbar-menu .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav .navbar-menu .navbar-links li {
+        width: 100%;
+    }
+
+    nav .navbar-menu .navbar-links a,
+    nav .navbar-menu .navbar-links .btn-logout {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .header-right .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav .header-right .nav-links li {
+        width: 100%;
+    }
+
+    nav .header-right .nav-links a,
+    nav .header-right .nav-links .btn-logout {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+/* Button Styles */
+.btn {
+    background-color: #7d78bb; /* Warna ungu */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.btn:hover {
+    background-color: #6a6599; /* Warna ungu lebih gelap */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Warna merah untuk tombol delete */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Warna merah lebih gelap */
+}
+
+/* Form Container Styles */
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-container h1 {
+    color: #7d78bb;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Form Actions Styles */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #7d78bb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6a6599;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+button[type="submit"] {
+    background-color: #7d78bb; /* Warna ungu */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #6a6599; /* Warna ungu lebih gelap */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #7d78bb; /* Warna ungu */
+    color: #fff;
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #7d78bb;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7d78bb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-box button:hover {
+    background-color: #6a6599;
+}
+
+.login-box a {
+    color: #7d78bb;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Page Styles */
+.dashboard-container {
+    padding: 20px;
+}
+
+.dashboard-header {
+    background-color: #7d78bb;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    margin-bottom: 10px;
+    color: #7d78bb;
+}
+
+/* Products Page Styles */
+.products-container {
+    padding: 20px;
+}
+
+.products-container h1 {
+    color: #7d78bb;
+    margin-bottom: 20px;
+}
+
+/* Orders Page Styles */
+.orders-container {
+    padding: 20px;
+}
+
+.orders-container h1 {
+    color: #7d78bb;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .header-right .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav .header-right .nav-links li {
+        width: 100%;
+    }
+
+    nav .header-right .nav-links a,
+    nav .header-right .nav-links .btn-logout {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/* Order Detail Styles */
+.order-detail-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.order-detail-container h1 {
+  color: #7D78BB;
+  margin-bottom: 20px;
+}
+
+.order-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.order-items {
+  margin-top: 20px;
+}
+
+.order-items h2 {
+  color: #7D78BB;
+  margin-bottom: 10px;
+}
+
+.order-items table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-items table th,
+.order-items table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.order-items table th {
+  background-color: #7D78BB;
+  color: #fff;
+}
+
+.btn-back {
+  background-color: #7D78BB;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #6a6599;
+}
